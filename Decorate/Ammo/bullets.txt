@@ -1,0 +1,12 @@
+ACTOR WS_Clip : Ammo {
+  Inventory.Amount 8
+  Inventory.MaxAmount 240
+  Ammo.BackpackAmount 8
+  Ammo.BackpackMaxAmount 480
+  Inventory.PickupMessage "$WS_GOTCLIPBULLETS"
+  States {
+    Spawn:
+      WSCL A -1;
+      Stop
+  }
+}
