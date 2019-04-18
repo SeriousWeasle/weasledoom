@@ -1,0 +1,10 @@
+ACTOR : WS_HealthBonus : Health {
+  Inventory.Amount 1
+  Inventory.MaxAmount 999999999
+  
+  States {
+    Spawn:
+      WSHB -1
+      Stop
+  }
+}
